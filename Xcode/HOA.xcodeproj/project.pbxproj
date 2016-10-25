@@ -1,0 +1,197 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C606392A1DBF086100663EDD /* Application.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Application.java; sourceTree = "<group>"; };
+		C606392C1DBF086100663EDD /* application.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = application.properties; sourceTree = "<group>"; };
+		C60639351DBF086D00663EDD /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; name = build.gradle; path = ../build.gradle; sourceTree = "<group>"; };
+		C606393B1DBF087A00663EDD /* HoaApplicationTests.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = HoaApplicationTests.java; sourceTree = "<group>"; };
+		C606393C1DBF08AD00663EDD /* User.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = User.java; sourceTree = "<group>"; };
+		C606393D1DBF09A300663EDD /* UserRepository.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserRepository.java; sourceTree = "<group>"; };
+		C606393E1DBF556200663EDD /* UserController.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserController.java; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C606391D1DBF084900663EDD = {
+			isa = PBXGroup;
+			children = (
+				C60639351DBF086D00663EDD /* build.gradle */,
+				C60639241DBF086100663EDD /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		C60639241DBF086100663EDD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C60639361DBF087A00663EDD /* test */,
+				C60639251DBF086100663EDD /* main */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		C60639251DBF086100663EDD /* main */ = {
+			isa = PBXGroup;
+			children = (
+				C606392B1DBF086100663EDD /* resources */,
+				C60639261DBF086100663EDD /* java */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		C60639261DBF086100663EDD /* java */ = {
+			isa = PBXGroup;
+			children = (
+				C60639271DBF086100663EDD /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		C60639271DBF086100663EDD /* com */ = {
+			isa = PBXGroup;
+			children = (
+				C60639281DBF086100663EDD /* latencyzero */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		C60639281DBF086100663EDD /* latencyzero */ = {
+			isa = PBXGroup;
+			children = (
+				C60639291DBF086100663EDD /* hoa */,
+			);
+			path = latencyzero;
+			sourceTree = "<group>";
+		};
+		C60639291DBF086100663EDD /* hoa */ = {
+			isa = PBXGroup;
+			children = (
+				C606392A1DBF086100663EDD /* Application.java */,
+				C606393C1DBF08AD00663EDD /* User.java */,
+				C606393D1DBF09A300663EDD /* UserRepository.java */,
+				C606393E1DBF556200663EDD /* UserController.java */,
+			);
+			path = hoa;
+			sourceTree = "<group>";
+		};
+		C606392B1DBF086100663EDD /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C606392C1DBF086100663EDD /* application.properties */,
+				C606392D1DBF086100663EDD /* static */,
+				C606392E1DBF086100663EDD /* templates */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		C606392D1DBF086100663EDD /* static */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		C606392E1DBF086100663EDD /* templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
+		C60639361DBF087A00663EDD /* test */ = {
+			isa = PBXGroup;
+			children = (
+				C60639371DBF087A00663EDD /* java */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		C60639371DBF087A00663EDD /* java */ = {
+			isa = PBXGroup;
+			children = (
+				C60639381DBF087A00663EDD /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		C60639381DBF087A00663EDD /* com */ = {
+			isa = PBXGroup;
+			children = (
+				C60639391DBF087A00663EDD /* latencyzero */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		C60639391DBF087A00663EDD /* latencyzero */ = {
+			isa = PBXGroup;
+			children = (
+				C606393A1DBF087A00663EDD /* hoa */,
+			);
+			path = latencyzero;
+			sourceTree = "<group>";
+		};
+		C606393A1DBF087A00663EDD /* hoa */ = {
+			isa = PBXGroup;
+			children = (
+				C606393B1DBF087A00663EDD /* HoaApplicationTests.java */,
+			);
+			path = hoa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C606391E1DBF084900663EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+			};
+			buildConfigurationList = C60639211DBF084900663EDD /* Build configuration list for PBXProject "HOA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C606391D1DBF084900663EDD;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C60639221DBF084900663EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C60639231DBF084900663EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C60639211DBF084900663EDD /* Build configuration list for PBXProject "HOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C60639221DBF084900663EDD /* Debug */,
+				C60639231DBF084900663EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C606391E1DBF084900663EDD /* Project object */;
+}
