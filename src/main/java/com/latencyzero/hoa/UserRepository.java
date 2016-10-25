@@ -14,6 +14,5 @@ interface
 UserRepository
 	extends JpaRepository<User, Long>
 {
-	Optional<User>
-	findByLogin(String inLogin);
+	Optional<User>				findByLogin(String inLogin);
 }

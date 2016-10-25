@@ -26,7 +26,7 @@ User
 	
 	@Id
 	@GeneratedValue
-	private Long mId;
+	private Long					mId;
 
 	@JsonIgnore
 	public String					mEncryptedPassword;

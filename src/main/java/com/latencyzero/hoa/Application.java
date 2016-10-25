@@ -1,6 +1,7 @@
 package com.latencyzero.hoa;
 
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
 
 
 
@@ -40,6 +42,9 @@ Application
 	void
 	main(String[] inArgs)
 	{
+		sLogger.info("Launched!");
 		SpringApplication.run(Application.class, inArgs);
 	}
+	
+	private static final Logger		sLogger		=	Logger.getLogger(Application.class.getName());
 }

@@ -1,6 +1,7 @@
 package com.latencyzero.hoa;
 
 
+import java.util.logging.Logger;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,4 +34,6 @@ UserController
 	}
 	
 	private	final	UserRepository			mUserRepository;
+	
+	private static final Logger		sLogger		=	Logger.getLogger(UserController.class.getName());
 }
