@@ -37,9 +37,10 @@ repositories
 
 dependencies
 {
-	compile group: "org.mindrot",				name: "jbcrypt",			version: "0.4-atlassian-1"
-	compile group: "org.eclipse.persistence",	name: "javax.persistence",	version: "2.1.1"
-	compile group: "org.springframework.data",	name: "spring-data-jpa",	version: "1.10.4.RELEASE"
+	compile group: "org.mindrot",					name: "jbcrypt",			version: "0.4-atlassian-1"
+	compile group: "org.eclipse.persistence",		name: "javax.persistence",	version: "2.1.1"
+	compile group: "org.springframework.data",		name: "spring-data-jpa",	version: "1.10.4.RELEASE"
+	compile group: "org.springframework.hateoas",	name: "spring-hateoas",		version: "0.21.0.RELEASE"
 
 	compile group: 'com.h2database',			name: 'h2',					version: '1.4.192'
 

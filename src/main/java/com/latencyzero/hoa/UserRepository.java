@@ -15,4 +15,5 @@ UserRepository
 	extends JpaRepository<User, Long>
 {
 	Optional<User>				findByLogin(String inLogin);
+	Optional<User>				findById(Long inID);
 }

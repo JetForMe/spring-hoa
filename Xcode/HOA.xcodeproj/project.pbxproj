@@ -14,6 +14,8 @@
 		C606393C1DBF08AD00663EDD /* User.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = User.java; sourceTree = "<group>"; };
 		C606393D1DBF09A300663EDD /* UserRepository.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserRepository.java; sourceTree = "<group>"; };
 		C606393E1DBF556200663EDD /* UserController.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserController.java; sourceTree = "<group>"; };
+		C606393F1DC04B6300663EDD /* UserRestControllerTest.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserRestControllerTest.java; sourceTree = "<group>"; };
+		C60639401DC04FB600663EDD /* application.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = application.yml; path = ../application.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -21,6 +23,7 @@
 			isa = PBXGroup;
 			children = (
 				C60639351DBF086D00663EDD /* build.gradle */,
+				C60639401DC04FB600663EDD /* application.yml */,
 				C60639241DBF086100663EDD /* src */,
 			);
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				C606393B1DBF087A00663EDD /* HoaApplicationTests.java */,
+				C606393F1DC04B6300663EDD /* UserRestControllerTest.java */,
 			);
 			path = hoa;
 			sourceTree = "<group>";

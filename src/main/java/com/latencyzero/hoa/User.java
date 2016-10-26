@@ -30,12 +30,12 @@ User
 		mEncryptedPassword = inClearPassword;		//	TODO
 	}
 	
-	public	Long			getId()						{ return mId; }
+	public	Long			getId()						{ return this.id; }
 	public	String			getLogin()					{ return this.login; }
 	
 	@Id
 	@GeneratedValue
-	private Long					mId;
+	private Long					id;
 
 	@JsonIgnore
 	public String					mEncryptedPassword;
