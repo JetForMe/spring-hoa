@@ -14,7 +14,6 @@ buildscript
 	}
 }
 
-apply plugin: "application"
 apply plugin: "java"
 apply plugin: "maven"
 apply plugin: "spring-boot"
@@ -46,13 +45,17 @@ dependencies
 
 	compile("org.springframework.boot:spring-boot-devtools")
 	compile("org.springframework.boot:spring-boot-starter-aop")
-	compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+//	compile("org.springframework.boot:spring-boot-starter-data-mongodb")
 	compile("org.springframework.boot:spring-boot-starter-data-jpa")
 	compile("org.springframework.boot:spring-boot-starter-groovy-templates")
-	compile("org.springframework.boot:spring-boot-starter-security")
 	compile("org.springframework.boot:spring-boot-starter-web")
 
-	compile("org.springframework.cloud:spring-cloud-starter-oauth2")
+	//	Security
+
+//	compile("org.springframework.boot:spring-boot-starter-security")
+//	compile("org.springframework.cloud:spring-cloud-starter-oauth2")
+
+	//	Automated Testing
 
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 	testCompile("org.springframework.restdocs:spring-restdocs-mockmvc")
@@ -72,10 +75,7 @@ compileJava
 	options.compilerArgs << "-Xlint:all" << "-Xdiags:verbose"
 }
 
-
-mainClassName = "com.latencyzero.hoa.Application"
-
-run
+bootRepackage
 {
-//	args "--conf", "conf.yml"
+	mainClass = "com.latencyzero.hoa.Application"
 }

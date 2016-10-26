@@ -3,6 +3,7 @@ package com.latencyzero.hoa;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,15 +15,23 @@ public
 class
 User
 {
+	/**
+		Default constructor is needed by JPA.
+	*/
+	
+	User()
+	{
+	}
+	
 	public
 	User(String inLogin, String inClearPassword)
 	{
-		mLogin = inLogin;
+		this.login = inLogin;
 		mEncryptedPassword = inClearPassword;		//	TODO
 	}
 	
 	public	Long			getId()						{ return mId; }
-	public	String			getLogin()					{ return mLogin; }
+	public	String			getLogin()					{ return this.login; }
 	
 	@Id
 	@GeneratedValue
@@ -30,5 +39,6 @@ User
 
 	@JsonIgnore
 	public String					mEncryptedPassword;
-	public String					mLogin;
+//	@Column(name = "login")
+	public String					login;
 }
