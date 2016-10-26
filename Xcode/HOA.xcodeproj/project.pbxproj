@@ -16,6 +16,9 @@
 		C606393E1DBF556200663EDD /* UserController.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserController.java; sourceTree = "<group>"; };
 		C606393F1DC04B6300663EDD /* UserRestControllerTest.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserRestControllerTest.java; sourceTree = "<group>"; };
 		C60639401DC04FB600663EDD /* application.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = application.yml; path = ../application.yml; sourceTree = "<group>"; };
+		C60639411DC0B95F00663EDD /* MainController.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = MainController.java; sourceTree = "<group>"; };
+		C60639421DC0B9D800663EDD /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		C60639441DC0C27F00663EDD /* user.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = user.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -78,6 +81,7 @@
 				C606393C1DBF08AD00663EDD /* User.java */,
 				C606393D1DBF09A300663EDD /* UserRepository.java */,
 				C606393E1DBF556200663EDD /* UserController.java */,
+				C60639411DC0B95F00663EDD /* MainController.java */,
 			);
 			path = hoa;
 			sourceTree = "<group>";
@@ -102,6 +106,8 @@
 		C606392E1DBF086100663EDD /* templates */ = {
 			isa = PBXGroup;
 			children = (
+				C60639421DC0B9D800663EDD /* index.html */,
+				C60639431DC0C27F00663EDD /* users */,
 			);
 			path = templates;
 			sourceTree = "<group>";
@@ -145,6 +151,14 @@
 				C606393F1DC04B6300663EDD /* UserRestControllerTest.java */,
 			);
 			path = hoa;
+			sourceTree = "<group>";
+		};
+		C60639431DC0C27F00663EDD /* users */ = {
+			isa = PBXGroup;
+			children = (
+				C60639441DC0C27F00663EDD /* user.html */,
+			);
+			path = users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
