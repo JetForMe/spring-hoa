@@ -1,6 +1,7 @@
 package com.latencyzero.hoa;
 
 import java.util.Arrays;
+import java.util.Map;
 import java.util.logging.Logger;
 
 import org.springframework.boot.CommandLineRunner;
@@ -43,6 +44,13 @@ Application
 	main(String[] inArgs)
 	{
 		sLogger.info("Launched!");
+		java.util.Properties props = System.getProperties();
+		for (Map.Entry<Object, Object> e : props.entrySet())
+		{
+			String key = (String) e.getKey();
+			String value = (String) e.getValue();
+			sLogger.info("Prop: " + key + ": " + value);
+		}
 		SpringApplication.run(Application.class, inArgs);
 	}
 	

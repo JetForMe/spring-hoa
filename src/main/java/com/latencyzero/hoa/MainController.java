@@ -1,6 +1,8 @@
 package com.latencyzero.hoa;
 
 
+import java.util.Map;
+import java.util.logging.Logger;
 
 
 import org.springframework.stereotype.Controller;
@@ -21,10 +23,23 @@ MainController
 	ModelAndView
 	index()
 	{
+		sLogger.info("INDEX");
+		
+		java.util.Properties props = System.getProperties();
+		for (Map.Entry<Object, Object> e : props.entrySet())
+		{
+			String key = (String) e.getKey();
+			String value = (String) e.getValue();
+			sLogger.info("Prop: " + key + ": " + value);
+		}
+		
 		ModelAndView mav = new ModelAndView("index");
+		mav.addObject("version", "0.1");
 		return mav;
 	}
 	
 	//	TODO: Add root REST call that returns some fancy HATEOAS
 	//	thing documenting the API.
+	
+	private static final Logger		sLogger		=	Logger.getLogger(MainController.class.getName());
 }
