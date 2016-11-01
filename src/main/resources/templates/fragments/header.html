@@ -10,8 +10,7 @@
 	<link href="css/site.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" data-th-replace="fragments/header :: header">
-		<!-- The rest of this tag is example code -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" data-th-fragment="header">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -20,7 +19,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Project name</a>
+				<a class="navbar-brand" href="#">HOA</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<form class="navbar-form navbar-right">
@@ -31,14 +30,14 @@
 						<input type="password" placeholder="Password" class="form-control">
 					</div>
 					<button type="submit" class="btn btn-success">Sign in</button>
+					<button type="submit" class="btn btn-success">Register</button>
 				</form>
 			</div>	<!--/* .navbar-collapse */-->
 		</div>
-    </nav>
+	</nav>
 
-	<h1>HOA v[[${version}]]</h1>
 
-	<footer class="footer" data-th-replace="fragments/header :: footer">
+	<footer class="footer" data-th-fragment="footer">
 		<div class="container">
 			<p class="text-muted" style="margin-top: 8px;">HOA v[[${version}]]</p>
 			<p class="text-muted">Copyright ©2016 Latency: Zero, LLC. All rights reserved.</p>

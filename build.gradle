@@ -3,6 +3,7 @@ buildscript
 	ext
 	{
 		springBootVersion = "1.4.1.RELEASE"
+//		springBootVersion = "2.0.0.SNAPSHOT"
 	}
 	repositories
 	{
@@ -11,9 +12,11 @@ buildscript
 	dependencies
 	{
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath group: "com.layer", name: "gradle-git-repo-plugin", version: "2.0.2"
 	}
 }
 
+apply plugin: "git-repo"
 apply plugin: "java"
 apply plugin: "maven"
 apply plugin: "spring-boot"
@@ -32,25 +35,33 @@ repositories
 	mavenCentral()
 	maven { url "https://maven.atlassian.com/3rdparty/" }
 	maven { url "https://mvnrepository.com/artifact/" }
+    maven { url "http://repo.spring.io/snapshot" }
+    maven { url "http://repo.spring.io/milestone" }
+
+//	github("linux-china", "spring-boot-starter-thymeleaf3", "master", "releases")
 }
 
 
 dependencies
 {
-	compile group: "org.mindrot",					name: "jbcrypt",			version: "0.4-atlassian-1"
-	compile group: "org.eclipse.persistence",		name: "javax.persistence",	version: "2.1.1"
-	compile group: "org.springframework.data",		name: "spring-data-jpa",	version: "1.10.4.RELEASE"
-	compile group: "org.springframework.hateoas",	name: "spring-hateoas",		version: "0.21.0.RELEASE"
+	compile group: "org.mindrot",					name: "jbcrypt",					version: "0.4-atlassian-1"
+	compile group: "org.eclipse.persistence",		name: "javax.persistence",			version: "2.1.1"
+	compile group: "org.springframework.data",		name: "spring-data-jpa",			version: "1.10.4.RELEASE"
+	compile group: "org.springframework.hateoas",	name: "spring-hateoas",				version: "0.21.0.RELEASE"
 
-	compile group: 'com.h2database',			name: 'h2',					version: '1.4.192'
+	compile group: "com.h2database",				name: "h2",							version: "1.4.192"
 
 	compile("org.springframework.boot:spring-boot-devtools")
 	compile("org.springframework.boot:spring-boot-starter-aop")
 	compile("org.springframework.boot:spring-boot-starter-data-jpa")
 //	compile("org.springframework.boot:spring-boot-starter-data-mongodb")
 	compile("org.springframework.boot:spring-boot-starter-groovy-templates")
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+//	compile group: "org.springframework.boot",	name: "spring-boot-starter-thymeleaf3",		version: "1.0.0-SNAPSHOT"
 	compile("org.springframework.boot:spring-boot-starter-web")
+
+//	compile group: "org.thymeleaf",					name: "thymeleaf-spring4",			version: "3.0.2.RELEASE"
+//	compile group: "nz.net.ultraq.thymeleaf",		name: "thymeleaf-layout-dialect",	version: "2.0.4"
 
 	//	Security
 
@@ -80,4 +91,9 @@ compileJava
 bootRepackage
 {
 	mainClass = "com.latencyzero.hoa.Application"
+}
+
+bootRun
+{
+	addResources = true
 }

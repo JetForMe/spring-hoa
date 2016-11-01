@@ -39,6 +39,18 @@ User
 
 	@JsonIgnore
 	public String					mEncryptedPassword;
-//	@Column(name = "login")
+	@Column(name = "mLogin")
 	public String					login;
+	
+	@Column(name = "mUsername")
+	public String					username;
+	
+	@Column(name = "mFirst")
+	public String					first;
+	
+	@Column(name = "mNick")
+	public String					nick;
+	
+	@Column(name = "mLast")
+	public String					last;
 }
